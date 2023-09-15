@@ -28,13 +28,13 @@ class BaseEnvConfig(object):
     reward.discomfort_penalty_factor = 0.5
 
     sim = Config()
-    sim.train_val_scenario = 'circle_crossing'
-    sim.test_scenario = 'circle_crossing'
+    sim.train_val_scenario = 'circle_crossing'     场景是圆形交叉
+    sim.test_scenario = 'circle_crossing'          
     sim.square_width = 20
     sim.circle_radius = 4
     sim.human_num = 5
-    sim.nonstop_human = False
-    sim.centralized_planning = True
+    sim.nonstop_human = False       人需要停止才可以不移动
+    sim.centralized_planning = True 
 
     humans = Config()
     humans.visible = True
